@@ -145,16 +145,86 @@ services:
 
 volumes:
   wazuh_api_configuration:
+    driver: local
+    driver_opts:
+      type: none
+      device: /path/on/host/wazuh_api_configuration
+      o: bind
   wazuh_etc:
+    driver: local
+    driver_opts:
+      type: none
+      device: /path/on/host/wazuh_etc
+      o: bind
   wazuh_logs:
+    driver: local
+    driver_opts:
+      type: none
+      device: /path/on/host/wazuh_logs
+      o: bind
   wazuh_queue:
+    driver: local
+    driver_opts:
+      type: none
+      device: /path/on/host/wazuh_queue
+      o: bind
   wazuh_var_multigroups:
+    driver: local
+    driver_opts:
+      type: none
+      device: /path/on/host/wazuh_var_multigroups
+      o: bind
   wazuh_integrations:
+    driver: local
+    driver_opts:
+      type: none
+      device: /path/on/host/wazuh_integrations
+      o: bind
   wazuh_active_response:
+    driver: local
+    driver_opts:
+      type: none
+      device: /path/on/host/wazuh_active_response
+      o: bind
   wazuh_agentless:
+    driver: local
+    driver_opts:
+      type: none
+      device: /path/on/host/wazuh_agentless
+      o: bind
   wazuh_wodles:
+    driver: local
+    driver_opts:
+      type: none
+      device: /path/on/host/wazuh_wodles
+      o: bind
   filebeat_etc:
+    driver: local
+    driver_opts:
+      type: none
+      device: /path/on/host/filebeat_etc
+      o: bind
   filebeat_var:
+    driver: local
+    driver_opts:
+      type: none
+      device: /path/on/host/filebeat_var
+      o: bind
   wazuh-indexer-data:
+    driver: local
+    driver_opts:
+      type: none
+      device: /path/on/host/wazuh-indexer-data
+      o: bind
   wazuh-dashboard-config:
+    driver: local
+    driver_opts:
+      type: none
+      device: /path/on/host/wazuh-dashboard-config
+      o: bind
   wazuh-dashboard-custom:
+    driver: local
+    driver_opts:
+      type: none
+      device: /path/on/host/wazuh-dashboard-custom
+      o: bind
